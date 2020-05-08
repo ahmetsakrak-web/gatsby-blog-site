@@ -91,12 +91,17 @@
   flex-basis: 100%;
   flex: 1;
 }
+.flex-columns .column .column-1{
+  background: url('../images/home/showcase.jpg') no-repeat center  center/cover;
+}
 
 .flex-columns .column .column-1,
 .flex-columns .column .column-2,
 .flex-columns .column .column-3{
 height: 100%;
 }
+
+
 
 .flex-columns img{
   width:100%;

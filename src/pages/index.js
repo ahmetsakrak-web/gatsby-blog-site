@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
-import Imgcont from "../components/conimage"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -51,7 +50,7 @@ const IndexPage = () => (
         <div className="row">
           <div className="column">
             <div className="column-1">
-              <Imgcont />
+
             </div>
           </div>
           <div className="column">

@@ -18,7 +18,7 @@ const Imgcont = () => {
     query {
        file(relativePath: { eq: "home/contact.jpg" }) {
         childImageSharp {
-          fixed(width: 700, height:600) {
+          fixed(width: 630, height:600) {
             ...GatsbyImageSharpFixed
           }
         }

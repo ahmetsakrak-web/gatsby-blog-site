@@ -4,7 +4,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 import "./utilities.css"
-
+import "./media.css"
 
 const Layout = ({ children }) => {
 

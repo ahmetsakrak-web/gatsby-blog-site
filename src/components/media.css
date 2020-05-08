@@ -1,0 +1,61 @@
+
+
+/* Mobile */
+@media(max-width: 1024px){
+  
+  .flex-columns .column{
+    flex: 100%;
+    max-width: 100%;
+  } 
+  
+  
+}
+
+
+@media(max-width: 768px ){
+  .navbar{
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a{
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+ .hero .content h1{
+  font-size: 40px;
+ }
+
+ .page-container{
+  grid-template-columns: 1fr;
+ }
+
+ .container{
+	 flex-direction:column;
+ }
+
+ .kapsayici-1{
+  max-width: 100%
+}
+.kapsayici-2 h2{
+  text-align: center;
+}
+#categories ul li{
+  text-align: center;
+  
+}
+}
+
+
+
+
+@media(max-width: 480px){
+  
+ #home-articles  .container{
+  flex-direction:column;
+}
+.navbar a{
+  padding: 5px 5px;
+ 
+}
+}
