@@ -7,7 +7,7 @@ import PaginationLinks from '../components/PaginationLinks'
 
 
 const BlogPage = () => {
-  const postsPerPage = 2;
+  const postsPerPage = 15;
   let numberOfPages
 
   return (
