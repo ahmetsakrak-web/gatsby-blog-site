@@ -100,7 +100,7 @@ const BlogPage = () => {
 const indexQuery = graphql`
 query{
   allMarkdownRemark(sort: {fields:[frontmatter___date],order:DESC}
-    limit:2){
+    limit:15){
     totalCount
     edges{
       node{
