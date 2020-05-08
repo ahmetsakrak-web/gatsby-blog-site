@@ -1,0 +1,157 @@
+.category, .search {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+:root {
+  --primary-color: #28a745;
+  --secondary-color: #4582a5;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+
+.text-primary{
+  color: var(--primary-color);
+}
+.text-center{
+  text-align: center;
+}
+.l-heading{
+  font-size: 30px;
+  margin-top: 40px;
+}
+#success{
+  height: 50vh;
+}
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 5px;
+}
+.btm:hover{
+  opacity: 0.8;
+}
+
+.btn-secondary{
+  background: var(--secondary-color);
+  color: #fff;
+}
+.btn-secondary:hover{
+  background: #fff;
+  color: var(--secondary-color) ;
+  border: 1px solid var(--secondary-color);
+  transition: ease 1s all;
+}
+
+.btn-primary, .bg-primary{
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark, .bg-dark{
+  background: #333;
+  color: #fff;
+}
+.btn-light, .bg-light{
+  background: #fff;
+  color: #333;
+}
+.paket{
+  display: flex;
+}
+.tags{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+}
+.tags div{
+  margin-top: 20px;
+  text-align: center;
+}
+.tags .category{
+  padding: 10px 20px;
+  font-size: 16px;
+}
+/* flex columns */
+
+.flex-columns .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2,
+.flex-columns .column .column-3{
+height: 100%;
+}
+
+.flex-columns img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column .column-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+.flex-columns .column .column-3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.flex-columns h2{
+  font-size: 40px;
+  font-weight: 100;
+}
+.flex-columns h4{
+  margin-bottom: 10px;
+}
+.flex-columns p{
+ margin: 20px 0;
+}
+
+
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination *.active {
+  background-color: #4CAF50;
+  color: white;
+  
+}
+.pagination *{
+  padding: 0.6rem 0.9rem;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

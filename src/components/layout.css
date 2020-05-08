@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,700&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: #d6d0d0;
+  color: #333;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+p{
+  font-weight: 300;
+  margin: 10px 0;
+}
+h2,h1{
+  line-height: 1.6;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+img{
+  width: 100%;
+}
+
+.logo{
+  color: #fff;
+}
+
+/* Navbar */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  height: 80px;
+  width: 100%;
+
+  z-index: 2;
+  background-color: #333;
+  top: 0;
+  position: sticky;
+  border-bottom: 3px solid #2f586e;
+  
+
+}
+.navbar ul{
+  display: flex;
+}
+.navbar a{
+  padding: 10px 40px;
+  margin: 0 10px;
+  color: #fff;
+  
+}
+.navbar a:hover{
+  border-radius: 10px;
+  border:  2px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: ease .333s all;
+}
+
+/* Header */
+.hero{
+  background: url('../images/home/showcase.jpg') no-repeat center  center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content{
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 0 20px;
+ 
+}
+
+.hero .content h1{
+  font-size: 55px;
+}
+
+.hero .content p{
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.5);
+}
+
+.hero *{
+  z-index: 1;
+}
+
+
+
+/* hakkımda*/
+
+.hakkimda {
+  padding: 50px;
+}
+.hakkimda h4{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.hakkimda .colum-img img{
+  
+  border-radius: 50%;
+}
+.hakkimda p a:hover{
+  color: #2f586e;
+}
+
+
+
+/* Form */
+.callback-form{
+  width: 100%;
+  padding: 20px 0;
+}
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control{
+  margin-bottom: 15px;
+}
+
+.callback-form input, textarea{
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5;
+}
+.callback-form input:focus, textarea:focus{
+  outline-color: #2f586e;
+}
+
+
+textarea{
+  height: 100px;
+}
+
+
+.callback-form .btn{
+  padding: 12px 0;
+  margin-top:12px;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn-block{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  
+  
+}
+.social{
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #fff;
+}
+.footer h2{
+  margin-top: 20px;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+.footer .social a:first-child {
+  margin-right: 50px;
+}
+
+
+/*  Blog container  */
+
+.defaultcat{background: var(--primary-color)}
+.sac-bakim { background: var(--sports-color) }
+.cilt-bakim { background: var(--ent-color) }
+.sac-boya { background: var(--tech-color) }
+
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+ 
+}
+#home-articles .container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.kapsayici-1{
+  flex: 1;
+  max-width: 200px;
+}
+.kapsayici-2{
+  flex: 3;
+  
+  
+}
+
+/* Search Box ve reklam */
+.reklam{
+  display: none;
+}
+.wrap{
+  margin: 10px 0;
+   display: none;
+}
+
+.search {
+  width: 100%;
+  
+  display: flex;
+}
+
+.searchTerm {
+  width: 180px;
+  border: 3px solid var(--secondary-color);
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+/*showcase */
+#showcase{
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+#showcase::before{
+  content: '';
+  background: url('../images/cases/woman.jpg') no-repeat center center/cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+#showcase .showcase-content{
+  z-index: 1;
+}
+
+/* Card */
+.card{
+  background: #fff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 800px;
+}
+aside{
+  margin-top: 30px;
+}
+/* Home Articles */
+#home-articles .articles-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+
+/*article */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+  font-family: 'Muli', sans-serif;
+ 
+}
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+.category {
+  margin-top: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+/*  List item  */
+#categories{
+  height: 320px;
+  border:5px solid var(--primary-color);
+  padding: 2rem;
+  border-radius: 10px;
+  background:#fff;
+
+  
+}
+
+#categories h2{
+  text-align: center;
+}
+
+
+.list li {
+  padding: .5rem 0;
+  border-bottom: #555 solid 1px;
+  width: 90%;
+
+}
+
+.list li a:hover {
+  color: var(--secondary-color);
+}
+
+
+
+
+
+/* Mobile */
+@media(max-width: 1024px){
+  .navbar{
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a{
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+  .flex-columns .column{
+    flex: 100%;
+    max-width: 100%;
+  } 
+  
+}
+
+
+@media(max-width: 768px ){
+ .hero .content h1{
+  font-size: 40px;
+ }
+
+ .page-container{
+  grid-template-columns: 1fr;
+ }
+
+
+ 
+.kapsayici-1{
+  max-width: 100%
+}
+.kapsayici-2 h2{
+  text-align: center;
+}
+#categories ul li{
+  text-align: center;
+  
+}
+}
+
+@media(max-width: 480px){
+  
+ #home-articles  .container{
+  flex-direction:column;
+}
+}
