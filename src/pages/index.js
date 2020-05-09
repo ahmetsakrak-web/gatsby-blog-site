@@ -56,7 +56,10 @@ const IndexPage = () => (
           <div className="column">
             <div className="column-2 bg-light">
               <h2>İletişim Formu</h2>
-              <form action="/process.php" metod="POST" className="callback-form">
+
+
+
+              <form name="contact" data-netlify="true" metod="POST" className="callback-form">
                 <div className="form-control">
                   <label htmlFor="name"></label>
                   <input type="text" name="name" id="name" placeholder="İsminiz" />
@@ -71,6 +74,8 @@ const IndexPage = () => (
                 </div>
                 <input type="submit" value="Gönder" id="submit" className="btn btn-secondary" />
               </form>
+
+
             </div>
           </div>
         </div>
