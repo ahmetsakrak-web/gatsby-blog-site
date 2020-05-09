@@ -21,6 +21,9 @@
   font-size: 30px;
   margin-top: 40px;
 }
+.M-heading{
+  font-size: 90px;
+}
 #success{
   height: 50vh;
 }
@@ -92,7 +95,7 @@
   flex: 1;
 }
 .flex-columns .column .column-1{
-  background: url('../images/home/showcase.jpg') no-repeat center  center/cover;
+  background: url('../images/sabit/contact.jpg') no-repeat center  center/cover;
 }
 
 .flex-columns .column .column-1,
@@ -160,3 +163,13 @@ height: 100%;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/* 404 */
+
+.dortyuzdort{
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

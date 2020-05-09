@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kişisel Bakım için İpuçları`,
     description: `Cilt bakımı, saç bakımı, ürün tanıtımı ve daha fazlası...`,
-    author: `@gatsbyjs`,
+    author: `Sultan Şakrak`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,10 +30,8 @@ module.exports = {
         name: `sakrak-icon`,
         short_name: `icon`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/kitap.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

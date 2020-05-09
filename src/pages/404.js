@@ -5,9 +5,12 @@ import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>Sayfa Bulunamadı</h1>
-    <Link >Anasayfaya geri dön</Link>
+    <SEO title="404: Sayfa Bulunamadı" />
+    <div className="dortyuzdort">
+      <h1 className="M-heading">404</h1>
+      <h1 className="l-heading"> Sayfa Bulunamadı</h1>
+      <Link className="defaultcat btn text-center" to="/">Anasayfaya geri dön</Link>
+    </div>
   </Layout>
 )
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/header'
+import Navbar from '../components/navbar'
 import SEO from '../components/seo'
 import { slugify } from '../util/utilityfun'
 import { Link } from 'gatsby'
@@ -8,7 +8,7 @@ export const tagsPage = ({ pageContext }) => {
   return (
     <>
       <SEO title="Tüm Taglar" keywords={[`tags`, `konular`]} />
-      <Header />
+      <Navbar />
       <div className="container">
         <h1>Tüm Taglar</h1>
         <div className="tags">

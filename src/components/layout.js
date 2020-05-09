@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Header from "./header"
+import Navbar from "./navbar"
 import Footer from "./footer"
 import "./layout.css"
 import "./utilities.css"
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"></link>
-      <Header />
+      <Navbar />
 
       {children}
 
