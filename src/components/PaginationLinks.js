@@ -15,35 +15,30 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
       {isFirst ? (
         <div className="active" > &laquo;  </div>
       ) : (
-          <Link to={previousPage}>&laquo;</Link>
+          <Link to={`/${previousPage}`}>&laquo;</Link>
         )}
 
 
 
       {Array.from({ length: numberOfPages }, (_, i) => currentPage === i + 1 ? (
-        <Link to={`/${i === 0 ? '/blog' : 'blog/page/' + (i + 1)}`}>
-          <div className="active" key={`page-number${i + 1}`}>
-
+        <Link key={`page-number${i + 1}`}
+          to={`/${i === 0 ? '/blog' : 'blog/page/' + (i + 1)}`}>
+          <div className="active" >
             {i + 1}
-
           </div>
         </Link>
       ) : (
-          <Link to={`/${i === 0 ? '/blog' : 'blog/page/' + (i + 1)}`}>
-            <div key={`page-number${i + 1}`}>
-
+          <Link key={`page-number${i + 1}`} to={`/${i === 0 ? '/blog' : 'blog/page/' + (i + 1)}`}>
+            <div >
               {i + 1}
-
             </div>
           </Link>
         ))}
       {
         isLast ? (
-
           <div className="active" > &raquo; </div>
-
         ) : (
-            <Link to={nextPage}>&raquo; </Link>
+            <Link to={`/${nextPage}`}>&raquo; </Link>
           )}
     </div>
   )

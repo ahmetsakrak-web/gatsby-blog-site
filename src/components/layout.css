@@ -249,6 +249,7 @@ textarea{
 .kapsayici-1{
   flex: 1;
   max-width: 200px;
+  display: none;
 }
 .kapsayici-2{
   flex: 3;

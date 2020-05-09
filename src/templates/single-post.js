@@ -5,18 +5,12 @@ import SEO from '../components/seo'
 import Img from 'gatsby-image'
 import { slugify } from '../util/utilityfun'
 import Sidebar from '../components/sidebar'
-import { DiscussionEmbed } from 'disqus-react';
 
 
-const singlePost = ({ data, pageContext }) => {
+
+const singlePost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
-  const baseUrl = 'expmal'
-  const disqusShortname = 'www.sultansakrak.com'
-  const disqusConfig = {
-    identifier: data.markdownRemark.id,
-    title: data.title,
-    url: baseUrl + pageContext.slug
-  }
+
   return (
     <Layout>
       <SEO title={post.title} />
@@ -47,10 +41,7 @@ const singlePost = ({ data, pageContext }) => {
               </div>
               <p dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 
-              <DiscussionEmbed
-                shortname={disqusShortname}
-                config={disqusConfig}
-              />
+
 
             </article>
 

@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import { graphql, StaticQuery } from 'gatsby'
 import Post from '../components/Post'
 import PaginationLinks from '../components/PaginationLinks'
+import Sidebar from "../components/sidebar"
 
 
 const BlogPage = () => {
@@ -37,7 +38,7 @@ const BlogPage = () => {
 
 
 
-
+          <Sidebar />
 
 
 

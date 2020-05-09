@@ -5,9 +5,10 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
+
   <Layout>
 
-    <SEO title="Home" />
+    <SEO title="Anasayfa" />
     <header className="hero">
       <div className="content">
         <h1>Kişisel Bakım için İpuçları</h1>
@@ -59,7 +60,8 @@ const IndexPage = () => (
 
 
 
-              <form name="contact" data-netlify="true" metod="POST" className="callback-form">
+              <form method="post" netlify-honeypot="bot-field" data-netlify="true" className="callback-form">
+                <input type="hidden" name="bot-field" />
                 <div className="form-control">
                   <label htmlFor="name"></label>
                   <input type="text" name="name" id="name" placeholder="İsminiz" />
