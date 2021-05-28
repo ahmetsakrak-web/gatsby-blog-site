@@ -44,11 +44,6 @@ const singlePost = ({ data }) => {
 
 
             </article>
-
-            <Sidebar />
-
-
-
           </div>
         </div>
       </section>

@@ -38,7 +38,7 @@ const BlogPage = () => {
 
 
 
-          <Sidebar />
+      
 
 
 
